@@ -92,8 +92,6 @@ for (n in 1:numero){
 }
 cat("la suma de los numeros del 1 al",numero,"es:", resultado)
 
-
-
 #tarea 04
 start <- 20
 fibbo <- 1
@@ -188,13 +186,15 @@ for(i in 1:tamaño){
 
 #tarea 10
 
+#primos del 1 al 100
+
 for (numero in 1:100) {
   if (numero == 1) {
-    cat("1 es primo\n")
+    cat("1 es primo???\n")
   } else {
     primo <- TRUE
     for (n in 2:sqrt(numero)) {
-      if (numero %% n == 0) {
+      if (numero %% n == 0 && numero!=2) {
         primo <- FALSE
         break
       }
